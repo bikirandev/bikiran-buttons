@@ -1,0 +1,28 @@
+{
+  "name": "bikiran-buttons",
+  "version": "1.0.6",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "copy": "copyfiles src/**/*.css dist --up 1",
+    "build": "tsc && copyfiles src/**/*.css dist --up 1 && echo {\"type\":\"module\"} > dist/package.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.7.3"
+  }
+}
