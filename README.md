@@ -101,18 +101,18 @@ The button supports multiple styles. Use the `variant` prop to define a style.
 
 ---
 
-## 🔥 **Props**
+## Props
 
-| Prop        | Type                                          | Default     | Description                       |
-| ----------- | --------------------------------------------- | ----------- | --------------------------------- | ---------- | ----------- |
-| `title`     | `string`                                      | `""`        | Text inside the button            |
-| `children`  | `ReactNode`                                   | `null`      | Any React element inside button   |
-| `type`      | `"button"                                     | "submit"    | "reset"`                          | `"button"` | Button type |
-| `variant`   | `TVariant`                                    | `"primary"` | Button style (see variants table) |
-| `onClick`   | `(ev: MouseEvent<HTMLButtonElement>) => void` | `undefined` | Click event handler               |
-| `className` | `string`                                      | `""`        | Additional CSS classes            |
-| `disabled`  | `boolean`                                     | `false`     | Disables the button               |
-| `loading`   | `boolean`                                     | `false`     | Shows loading spinner             |
+| Prop      | Type                                           | Default    | Description                          |
+|----------|--------------------------------|------------|----------------------------------|
+| `title`   | `string`                                      | `""`         | Text inside the button              |
+| `children` | `ReactNode`                                | `null`      | Any React element inside button     |
+| `type`    | `"button" \| "submit" \| "reset"`          | `"button"`  | Button type                          |
+| `variant` | `TVariant`                                  | `"primary"` | Button style (see variants table)    |
+| `onClick` | `(ev: MouseEvent<HTMLButtonElement>) => void` | `undefined` | Click event handler                  |
+| `className` | `string`                                  | `""`        | Additional CSS classes               |
+| `disabled` | `boolean`                                  | `false`     | Disables the button                  |
+| `loading` | `boolean`                                  | `false`     | Shows loading spinner               |
 
 ---
 
