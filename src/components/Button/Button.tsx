@@ -124,7 +124,10 @@ export const Button = ({
       onClick={onClick}
       className={`button ${cName(variant)} ${makeCNameImportant(
         className || ""
-      )}`}
+      )}
+      ${loading ? "!point-events-none" : ""}
+      
+      `}
       disabled={disabled}
     >
       {children || title}
