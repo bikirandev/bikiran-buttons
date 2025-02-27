@@ -1,4 +1,4 @@
-import { Button } from "bik-button";
+import Button, { ButtonLoading } from "bik-button/dist/components/Button/Button";
 import React from "react";
 
 function App() {
@@ -14,11 +14,7 @@ function App() {
           className="w-[300px]"
         />
         <Button title="Disabled Button" disabled={true} />
-        <Button
-          title="Custom Style"
-          className="custom-button"
-          onClick={() => alert("Custom button clicked!")}
-        />
+        <Button title="Custom Style" className="custom-button" onClick={() => alert("Custom button clicked!")} />
       </div>
     </div>
   );
