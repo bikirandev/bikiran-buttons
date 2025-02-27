@@ -79,20 +79,20 @@ type ButtonProps2 = {
 export const ButtonLoading: React.FC = () => {
   return (
     <div className="size-full bg-primary-50 opacity-50 absolute top-0 left-0">
-      <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-block size-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="100%"
+          height="100%"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="lucide lucide-loader-circle"
+          className="lucide lucide-loader-circle animate-spin"
         >
-          <path d="M21 12a9 9 0 1 1-6.219-8.56" className="animate-spin" />
+          <path d="M21 12a9 9 0 1 1-6.219-8.56" />
         </svg>
       </span>
     </div>
