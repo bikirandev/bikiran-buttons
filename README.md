@@ -64,6 +64,9 @@ const App = () => (
 
 ## Preview
 
+![Button Variants Preview](/example.png)
+_Caption: All available button styles._
+
 ## 📝 Props Reference
 
 | Prop      | Type                 | Default   | Description          |
