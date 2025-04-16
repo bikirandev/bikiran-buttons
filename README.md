@@ -5,9 +5,9 @@
 ## 📦 Installation
 
 ```
-npm install bik-button
+npm install @bikiran/button
 # or
-yarn add bik-button
+yarn add @bikiran/button
 ```
 
 ## Compatibility:
