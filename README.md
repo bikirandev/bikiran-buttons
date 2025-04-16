@@ -1,137 +1,127 @@
 # Button Component
 
-A reusable, customizable, and accessible button component for React applications. Supports multiple variants, loading states, and additional customizations.
+## A reusable, customizable, and accessible button component for React applications. Supports multiple variants, loading states, and icons.
 
 ## 📦 Installation
 
-```sh
-npm install bik-button
 ```
-
-or
-
-```sh
+npm install bik-button
+# or
 yarn add bik-button
 ```
 
----
+## Compatibility:
+
+- React 16.8+
+- TypeScript (optional)
 
 ## 🚀 Usage
 
-### **Basic Example**
+### Basic Example
 
-```tsx
-import React from "react";
+```
 import { Button } from "bik-button";
 
-const App = () => {
-  return (
-    <div>
-      <Button title="Click Me" onClick={() => alert("Button Clicked")} />
-    </div>
-  );
-};
-
-export default App;
+const App = () => (
+  <Button
+    title="Click Me"
+    onClick={() => alert("Button Clicked")}
+  />
+);
 ```
 
-### **Using Variants**
+### Key Features
 
-```tsx
-<Button variant="primary">Primary</Button>
-<Button variant="primary-line">Primary Line</Button>
-<Button variant="secondary">Secondary</Button>
-<Button variant="secondary-line">Secondary Line</Button>
-<Button variant="blue">Blue</Button>
-<Button variant="red">Red</Button>
-<Button variant="green">Green</Button>
-<Button variant="yellow-outline">Yellow Outline</Button>
+- Variants: Primary, secondary, colored, and outlined styles.
+- States: Loading spinner and disabled modes.
+- Customizable: Extend with CSS classes or inline icons.
+
+## 🎨 Examples with Code
+
+### 1. Variants
+
+```
+<Button variant="primary">Solid</Button>
+<Button variant="blue-line-bordered">Bordered</Button>
+<Button variant="pink-outline">Outlined</Button>
 ```
 
-### **Button with Icon**
+### 2. Icon Button
 
-```tsx
-<Button variant="primary">
-  <span>🚀 Launch</span>
+```
+   <Button variant="green">
+      <span>🌱 Plant Tree</span>
+   </Button>
+```
+
+### 3. Loading State
+
+```
+   <Button loading variant="red">
+      Processing...
+   </Button>
+```
+
+## Preview
+
+## 📝 Props Reference
+
+| Prop      | Type                 | Default   | Description          |
+| --------- | -------------------- | --------- | -------------------- |
+| variant   | TVariant (see below) | "primary" | Button style         |
+| loading   | boolean              | false     | Shows spinner        |
+| disabled  | boolean              | false     | Disables interaction |
+| className | string               | ""        | Custom CSS classes   |
+
+### All Variants
+
+"primary", "primary-line", "secondary", "secondary-line", "secondary-line-bordered", "blue", "blue-line", "blue-line-bordered", "red", "red-line", "red-line-bordered", "pink", "pink-outline", "pink-outline-bordered", "green","green-outline" "gray", "yellow-outline"
+
+## 🛠 Customization
+
+### 1. Style Overrides
+
+```
+<Button
+  className="px-8 py-3 rounded-full font-bold shadow-lg"
+  variant="primary"
+>
+  Big Rounded Button
 </Button>
 ```
 
-### **Loading State**
+### 2. Theming with CSS Variables
 
-```tsx
-<Button variant="primary" loading>
-  Loading...
-</Button>
+Override in your global CSS:
+
+```
+:root {
+  --primary: #8b5cf6; /* Example: Change primary color */
+}
 ```
 
-### **Disabled State**
+## 🤝 Contribution Guide
 
-```tsx
-<Button variant="primary" disabled>
-  Disabled
-</Button>
+1. Clone repo:
+
+```
+git clone https://github.com/your-repo/bik-button.git
 ```
 
----
+2. Add new variants in cName() function
 
-## 🎨 **Variants**
+3. Test changes in Storybook (if available)
 
-The button supports multiple styles. Use the `variant` prop to define a style.
+4. Submit PR with:
 
-| Variant                   | Description                    |
-| ------------------------- | ------------------------------ |
-| `primary`                 | Solid primary button (default) |
-| `primary-line`            | Outlined primary button        |
-| `secondary`               | Solid secondary button         |
-| `secondary-line`          | Outlined secondary button      |
-| `secondary-line-bordered` | Bordered secondary button      |
-| `blue`                    | Solid blue button              |
-| `blue-line`               | Outlined blue button           |
-| `blue-line-bordered`      | Bordered blue button           |
-| `red`                     | Solid red button               |
-| `red-line`                | Outlined red button            |
-| `red-line-bordered`       | Bordered red button            |
-| `pink`                    | Solid pink button              |
-| `pink-outline`            | Outlined pink button           |
-| `pink-outline-bordered`   | Bordered pink button           |
-| `green`                   | Solid green button             |
-| `green-outline`           | Outlined green button          |
-| `gray`                    | Gray button                    |
-| `yellow-outline`          | Outlined yellow button         |
+   - TypeScript types for new props
 
----
+   - Storybook examples (if applicable)
 
-## Props
-
-| Prop        | Type                                          | Default     | Description                       |
-| ----------- | --------------------------------------------- | ----------- | --------------------------------- |
-| `title`     | `string`                                      | `""`        | Text inside the button            |
-| `children`  | `ReactNode`                                   | `null`      | Any React element inside button   |
-| `type`      | `"button" \| "submit" \| "reset"`             | `"button"`  | Button type                       |
-| `variant`   | `TVariant`                                    | `"primary"` | Button style (see variants table) |
-| `onClick`   | `(ev: MouseEvent<HTMLButtonElement>) => void` | `undefined` | Click event handler               |
-| `className` | `string`                                      | `""`        | Additional CSS classes            |
-| `disabled`  | `boolean`                                     | `false`     | Disables the button               |
-| `loading`   | `boolean`                                     | `false`     | Shows loading spinner             |
-
----
-
-## 🛠 **Custom Styles**
-
-You can override styles using the `className` prop.
-
-```tsx
-<Button className="custom-button">Custom Styled Button</Button>
-```
-
----
-
-## 🔗 **License**
+## 📜 License
 
 This project is licensed under the MIT License.
 
----
+👨‍💻 Author
 
-## 👨‍💻 **Author**
-
-Created by [bikiran.com](https://bikiran.com). Feel free to contribute!
+Created by [Bikiran](https://www.bikiran.com/). Feel Free to contribute!
