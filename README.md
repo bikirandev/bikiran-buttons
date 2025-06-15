@@ -1,6 +1,11 @@
-# Button Component
+[![npm Version](https://img.shields.io/npm/v/@bikiran/button.svg?style=flat-square)](https://www.npmjs.com/package/@bikiran/button)
+[![npm Downloads](https://img.shields.io/npm/dt/@bikiran/button.svg?style=flat-square)](https://www.npmjs.com/package/@bikiran/button)
+[![GitHub License](https://img.shields.io/github/license/bikirandev/bikiran-buttons.svg?style=flat-square)](https://github.com/bikirandev/bikiran-buttons/blob/main/LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/bikirandev/bikiran-buttons.svg?style=flat-square)](https://github.com/bikirandev/bikiran-buttons/issues)
+[![GitHub Stars](https://img.shields.io/github/stars/bikirandev/bikiran-buttons.svg?style=flat-square)](https://github.com/bikirandev/bikiran-buttons/stargazers)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/bikirandev/bikiran-buttons.svg?style=flat-square)](https://github.com/bikirandev/bikiran-buttons/commits/main)
 
-## A reusable, customizable, and accessible button component for React applications. Supports multiple variants, loading states, and icons.
+A reusable, customizable, and accessible button component for React applications. Supports multiple variants, loading states, and icons.
 
 ## 📦 Installation
 
@@ -127,4 +132,4 @@ This project is licensed under the MIT License.
 
 👨‍💻 Author
 
-Created by [Bikiran](https://www.bikiran.com/). Feel Free to contribute!
+Developed by [Bikiran](https://www.bikiran.com/). Feel Free to contribute!
