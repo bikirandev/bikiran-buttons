@@ -1,4 +1,4 @@
-import Button, { ButtonLoading } from "bik-button/dist/components/Button/Button";
+import { Button, ButtonLoading } from "../../src";
 import React from "react";
 
 function App() {

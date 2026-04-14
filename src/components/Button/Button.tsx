@@ -46,8 +46,8 @@ const cName = (variant: string) => {
   }
 };
 
-type ButtonProps2 = {
-  title?: any;
+export type ButtonProps = {
+  title?: string;
   children?: ReactNode;
   type?: "button" | "submit" | "reset";
   variant?:
@@ -67,6 +67,7 @@ type ButtonProps2 = {
     | "pink-outline-bordered"
     | "green"
     | "green-outline"
+    | "yellow"
     | "yellow-outline"
     | "gray";
   onClick?: (ev: MouseEvent<HTMLButtonElement>) => void;
@@ -108,7 +109,7 @@ const Button = ({
   className,
   disabled,
   loading,
-}: ButtonProps2) => {
+}: ButtonProps) => {
   return (
     <button
       type={type}
@@ -131,7 +132,7 @@ const Button = ({
   );
 };
 
-export const ButtonRefresh: React.FC<Partial<ButtonProps2>> = ({
+export const ButtonRefresh: React.FC<Partial<ButtonProps>> = ({
   onClick,
   className = "",
   disabled = false,

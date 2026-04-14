@@ -1,3 +1,10 @@
 src/
-tsconfig.json
+example/
 node_modules/
+tsconfig.json
+vitest.config.ts
+index.html
+example.png
+TODO.md
+.gitignore
+.github/
